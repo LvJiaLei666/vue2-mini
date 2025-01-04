@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./Dep.js"></script>
+    <script src="./Watcher.js"></script>
+    <script src="./Observe.js"></script>
+    <script src="./Compile.js"></script>
+    <script src="./Vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>a value: {{a.a}}</p>
+    <div>b value: {{b}}</div>
+    <span>v-model: </span><input type="text" v-model="b">
+</div>
+<script>
+  // 模仿 Vue 的初始化和传入的参数
+  let vue = new Vue({
+    el: '#app',
+    data: {
+      a: { a: 'is a' },
+      b: 'is b',
+      c: 'is c'
+    }
+  })
+  console.log('¬∆¬ vue',vue)
+</script>
+</body>
+
+</html>

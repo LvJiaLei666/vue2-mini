@@ -20,6 +20,7 @@ function Observer(data) {
       set(newVal) {
         // 如果值没有变化，不做处理
         if(newVal === val) return
+        console.log('数据变化了')
         // 更新值
         val = newVal
         // 对新值进行观察
